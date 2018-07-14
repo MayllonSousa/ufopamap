@@ -1,4 +1,4 @@
-package com.greenproject.carteiradeclientes2;
+package com.greenproject.ufopamap;
 
 import org.junit.Test;
 

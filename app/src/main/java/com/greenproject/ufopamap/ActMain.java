@@ -1,4 +1,4 @@
-package com.greenproject.carteiradeclientes2;
+package com.greenproject.ufopamap;
 
 import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
@@ -13,7 +13,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.greenproject.carteiradeclientes2.database.UfmapOpenHelper;
+import com.greenproject.ufopamap.database.UfmapOpenHelper;
 
 public class ActMain extends AppCompatActivity {
 
@@ -28,14 +28,14 @@ public class ActMain extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.act_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setContentView(com.greenproject.ufopamap.R.layout.act_main);
+        Toolbar toolbar = (Toolbar) findViewById(com.greenproject.ufopamap.R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        fab = (FloatingActionButton) findViewById(R.id.fab);
-        lstDados = (RecyclerView) findViewById(R.id.lstDados);
+        fab = (FloatingActionButton) findViewById(com.greenproject.ufopamap.R.id.fab);
+        lstDados = (RecyclerView) findViewById(com.greenproject.ufopamap.R.id.lstDados);
 
-        layoutContentMain = (ConstraintLayout)findViewById(R.id.layoutContentMain);
+        layoutContentMain = (ConstraintLayout)findViewById(com.greenproject.ufopamap.R.id.layoutContentMain);
 
         criarConexao();
     }
@@ -48,15 +48,15 @@ public class ActMain extends AppCompatActivity {
 
             conexao = ufmapOpenHelper.getWritableDatabase();
 
-            Snackbar.make(layoutContentMain, R.string.db_message_correct, Snackbar.LENGTH_SHORT)
-                    .setAction(R.string.action_ok, null).show();
+            Snackbar.make(layoutContentMain, com.greenproject.ufopamap.R.string.db_message_correct, Snackbar.LENGTH_SHORT)
+                    .setAction(com.greenproject.ufopamap.R.string.action_ok, null).show();
 
         } catch (SQLiteException ex){
 
             AlertDialog.Builder dlg = new AlertDialog.Builder(this);
-            dlg.setTitle(R.string.title_erro);
+            dlg.setTitle(com.greenproject.ufopamap.R.string.title_erro);
             dlg.setMessage(ex.getMessage());
-            dlg.setNeutralButton(R.string.action_ok, null);
+            dlg.setNeutralButton(com.greenproject.ufopamap.R.string.action_ok, null);
             dlg.show();
 
         }

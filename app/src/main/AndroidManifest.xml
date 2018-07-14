@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.greenproject.carteiradeclientes2">
+    package="com.greenproject.ufopamap">
 
     <application
         android:allowBackup="true"
@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ActMain"
+            android:name="com.greenproject.ufopamap.ActMain"
             android:label="@string/title_activity_act_main"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -20,7 +20,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ActCadCliente"
+            android:name="com.greenproject.ufopamap.ActCadCliente"
             android:label="@string/title_activity_act_cad_cliente"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>

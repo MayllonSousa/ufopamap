@@ -1,4 +1,4 @@
-package com.greenproject.carteiradeclientes2.dominio.entidades;
+package com.greenproject.ufopamap.dominio.entidades;
 
 public class Cliente {
 

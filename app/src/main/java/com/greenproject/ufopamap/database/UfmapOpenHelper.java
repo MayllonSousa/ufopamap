@@ -1,4 +1,4 @@
-package com.greenproject.carteiradeclientes2.database;
+package com.greenproject.ufopamap.database;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
