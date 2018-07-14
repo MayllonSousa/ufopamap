@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Carteira de Clientes</string>
+    <string name="title_activity_act_main">UFOPA Map</string>
+    <string name="title_activity_act_cad_cliente">Cliente</string>
+    <string name="lbl_name">Nome</string>
+    <string name="lbl_adress">Endereço</string>
+    <string name="lbl_email">E-mail</string>
+    <string name="lbl_phone">Telefone</string>
+    <string name="title_menu_ok">OK</string>
+    <string name="title_menu_cancel">Cancelar</string>
+    <string name="title_alert">Aviso</string>
+    <string name="message_invalid">Há campos inválidos ou em branco!</string>
+    <string name="db_message_correct">Conexão criada com sucesso!</string>
+    <string name="title_erro">Erro</string>
+    <string name="action_ok">OK</string>
+</resources>
